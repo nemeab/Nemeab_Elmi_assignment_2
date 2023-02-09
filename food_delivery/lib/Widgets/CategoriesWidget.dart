@@ -136,7 +136,7 @@ class CategoriesWidget extends StatelessWidget {
                     ),
                   ]),
               child: Image.asset(
-                "images/burger.png",
+                "images/salan.png",
                 width: 50,
                 height: 50,
               ),

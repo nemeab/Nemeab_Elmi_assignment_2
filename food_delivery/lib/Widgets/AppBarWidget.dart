@@ -18,7 +18,27 @@ class AppBarWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(  
-                  color: Color.grey.withOpacity(0.5),
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 2,
+                  blurRadius: 10,
+                  offset: Offset(0, 3),
+                )
+              ],
+            ),
+            child: Icon(Icons.menu),
+          ),
+        ),
+
+      InkWell(
+          onTap: () {},
+          child: Container(
+            padding: EdgeInsets.all(8),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(  
+                  color: Colors.grey.withOpacity(0.5),
                   spreadRadius: 2,
                   blurRadius: 10,
                   offset: Offset(0, 3),
@@ -27,8 +47,8 @@ class AppBarWidget extends StatelessWidget {
             ),
             child: Icon(Icons.notifications),
           ),
-        ),
+        ),  
       ]),
     );
-  }
+  } 
 }
